@@ -19,3 +19,4 @@ Backend : J'ai pu terminer la première route api, mais je n'ai pas pu terminer 
 
 
 
+    let query = `select details where name=${city} FROM (select  city.insee, forecast.details, city.name from city INNER JOIN forecast ON city.insee=forecast.insee)`;
